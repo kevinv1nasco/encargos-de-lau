@@ -195,14 +195,26 @@
     .hero__bg {
       position: absolute;
       inset: 0;
-      background:
-        linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.55) 100%),
-        url('hero.png') center 10% / cover no-repeat;
-      transform: scale(1.02);
+      background: url('hero.png') center / cover no-repeat;
+      filter: blur(28px) brightness(0.55) saturate(1.1);
+      transform: scale(1.15);
+    }
+
+    .hero__photo {
+      position: absolute;
+      inset: 0;
+      background: url('hero.png') center / contain no-repeat;
+      transform: scale(1.005);
       transition: transform 8s var(--ease);
     }
 
-    .hero:hover .hero__bg { transform: scale(1.06); }
+    .hero:hover .hero__photo { transform: scale(1.03); }
+
+    .hero__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.55) 100%);
+    }
 
     .hero__content {
       position: relative;
@@ -825,6 +837,8 @@
 
   <section class="hero">
     <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__photo" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
     <div class="hero__content">
       <div class="hero__badge">
         <span class="hero__badge-dot" aria-hidden="true"></span>
