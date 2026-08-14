@@ -778,21 +778,13 @@
 
       .how__grid { grid-template-columns: repeat(2, 1fr); }
 
-      .what__grid { grid-template-columns: repeat(3, 1fr); }
-
-      .what__item:last-child {
-        grid-column: span 1;
-      }
+      .what__grid { grid-template-columns: repeat(4, 1fr); }
     }
 
     @media (min-width: 1024px) {
       .how__grid { grid-template-columns: repeat(4, 1fr); }
 
-      .what__grid {
-        grid-template-columns: repeat(5, 1fr);
-      }
-
-      .what__item:last-child { grid-column: auto; }
+      .what__grid { grid-template-columns: repeat(4, 1fr); }
     }
 
     @media (max-width: 767px) {
@@ -885,9 +877,8 @@
   <section class="what">
     <div class="container">
       <div class="what__header reveal">
-        <span class="eyebrow">Catálogo</span>
-        <h2 class="what__heading">¿Qué puede conseguirte Lau?</h2>
-        <p class="what__sub">Desde tenis y ropa hasta accesorios. Si está de moda allá y aún no ha llegado acá, Lau probablemente ya lo tiene o lo puede traer.</p>
+        <h2 class="what__heading">¿Qué encuentra Lau para ti?</h2>
+        <p class="what__sub">Una selección de marcas, tendencias y productos.</p>
       </div>
       <div class="what__grid">
         <div class="what__item reveal">
@@ -896,19 +887,31 @@
         </div>
         <div class="what__item reveal">
           <div class="what__emoji" aria-hidden="true">👜</div>
-          <p class="what__label">Bolsos y accesorios</p>
+          <p class="what__label">Bolsos &amp; Marroquinería</p>
         </div>
         <div class="what__item reveal">
           <div class="what__emoji" aria-hidden="true">👗</div>
-          <p class="what__label">Ropa</p>
+          <p class="what__label">Moda &amp; Vestuario</p>
         </div>
         <div class="what__item reveal">
-          <div class="what__emoji" aria-hidden="true">🧢</div>
-          <p class="what__label">Gorras y extras</p>
+          <div class="what__emoji" aria-hidden="true">🕶️</div>
+          <p class="what__label">Accesorios</p>
+        </div>
+        <div class="what__item reveal">
+          <div class="what__emoji" aria-hidden="true">⌚</div>
+          <p class="what__label">Relojería</p>
+        </div>
+        <div class="what__item reveal">
+          <div class="what__emoji" aria-hidden="true">💎</div>
+          <p class="what__label">Joyería</p>
+        </div>
+        <div class="what__item reveal">
+          <div class="what__emoji" aria-hidden="true">📱</div>
+          <p class="what__label">Tecnología</p>
         </div>
         <div class="what__item reveal">
           <div class="what__emoji" aria-hidden="true">✨</div>
-          <p class="what__label">Encargos especiales</p>
+          <p class="what__label">Encargos Especiales</p>
         </div>
       </div>
     </div>
